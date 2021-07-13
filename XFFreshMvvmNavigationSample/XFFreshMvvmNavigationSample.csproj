@@ -19,9 +19,11 @@
     <None Remove="FreshMvvm" />
     <None Remove="Pages\" />
     <None Remove="PageModels\" />
+    <None Remove="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\" />
     <Folder Include="PageModels\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 </Project>

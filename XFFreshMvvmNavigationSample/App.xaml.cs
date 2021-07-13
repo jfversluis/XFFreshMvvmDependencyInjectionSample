@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using FreshMvvm;
 using XFFreshMvvmNavigationSample.PageModels;
+using XFFreshMvvmNavigationSample.Services;
 
 namespace XFFreshMvvmNavigationSample
 {
@@ -11,6 +12,8 @@ namespace XFFreshMvvmNavigationSample
         public App()
         {
             InitializeComponent();
+
+            FreshIOC.Container.Register<IMyDataService, MyDataService>();
 
             var page = FreshPageModelResolver.ResolvePageModel<MainPageModel>();
 
